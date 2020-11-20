@@ -1,0 +1,47 @@
+body {
+    overflow:hidden;
+    -webkit-touch-callout: none;    /* iOS Safari */
+    -webkit-user-select: none;      /* Safari */
+    -khtml-user-select: none;       /* Konqueror HTML */
+    -moz-user-select: none;         /* Old versions of Firefox */
+    -ms-user-select: none;          /* Internet Explorer/Edge */
+    user-select: none;              /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+#shanvas {
+    position:fixed;
+    width:100%;
+    height:100%;
+    left:0px;
+    top:0px;
+    cursor:crosshair;
+}
+
+.erase {
+    cursor:url("../img/eraser.png") 25 25, crosshair !important;
+}
+
+.highlight {
+    cursor:url("../img/highlight.png") 12 12, crosshair !important;
+}
+
+.navbar {
+    z-index:1000;
+}
+
+#pen {
+    background-color:#000;
+    border-color:#000;
+}
+
+.colour-picker {
+    height:32px;
+    width:32px;
+    display:block;
+    border-radius:20px;
+}
+
+.dropdown-menu {
+    min-width:unset !important;
+}
