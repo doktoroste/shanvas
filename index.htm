@@ -70,8 +70,21 @@
 
         <div class="container-fluid">
             <canvas id="shanvas" class="pen"></canvas> 
-         </div>
+        </div>
 
+        <script>
+            let shanvasId = 0;
+            if(document.location.hash.length>0) {
+                shanvasId = document.location.hash;
+            } else {
+                shanvasId = Math.round(Math.random() * 100000000);
+                document.location.hash = shanvasId;
+            }
+            console.log('shanvasId: '+shanvasId);
+
+        </script>
+
+        <script type="text/javascript" src="js/websockets.js"></script>
         <script type="text/javascript" src="js/shanvas.js"></script>
 
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
